@@ -16,4 +16,12 @@ public class InputView {
                 .filter(s -> !s.isEmpty())
                 .toList();
     }
+
+    public int readTryCount() {
+        System.out.println("시도할 횟수는 몇 회인가요?");
+        String input = Console.readLine();
+        InputValidator.validateNotEmpty(input);
+        InputValidator.validateNumeric(input);
+        return Integer.parseInt(input);
+    }
 }
