@@ -38,7 +38,7 @@
 - [X] `RacingGameTest` : 한 턴 이동 및 누적 이동, 우승자 판별 로직 테스트
 - [ ] `RacingServiceTest` : 전체 게임 로직 시뮬레이션 테스트
 - [X] `InputValidatorTest` : 문자열/숫자 입력 검증 테스트
-- [ ] `InputViewTest` : 입력 문자열 파싱, 검증 로직 예외 확인
+- [X] `InputViewTest` : 입력 문자열 파싱, 검증 로직 예외 확인
 - [ ] `OutputviewTest` : 출력 포맷(라운드, 우승자, 에러 메시지) 검증 테스트
 - [ ] `RacingValidatorTest` : 중복 이름 및 시도 횟수 검증 테스트
 
