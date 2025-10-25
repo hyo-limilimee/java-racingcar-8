@@ -20,4 +20,24 @@ public class Car {
             throw new IllegalArgumentException("자동차 이름은 5자 이하여야 합니다.");
         }
     }
+
+    public void move(int randomValue) {
+        if (randomValue >= MOVE_THRESHOLD) {
+            position++;
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public String renderPosition() {
+        return name + " : " + "-".repeat(position);
+    }
 }
+
+
