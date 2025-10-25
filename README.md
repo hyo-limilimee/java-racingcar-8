@@ -35,6 +35,7 @@
 ### 🧪 테스트 코드
 - [X] `CarTest` : 자동차 이름 검증, 이동 조건 검증 (랜덤 주입 시 전진 여부 테스트)
 - [X] `CarsTest` : 우승자 계산 로직 테스트
+- [X] `RacingGameTest` : 한 턴 이동 및 누적 이동, 우승자 판별 로직 테스트
 - [ ] `RacingServiceTest` : 전체 게임 로직 시뮬레이션 테스트
 - [ ] `InputValidatorTest` : 문자열/숫자 입력 검증 테스트
 - [ ] `RacingValidatorTest` : 중복 이름 및 시도 횟수 검증 테스트
