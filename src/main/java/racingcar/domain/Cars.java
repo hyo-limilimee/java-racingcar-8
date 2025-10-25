@@ -14,8 +14,17 @@ public class Cars {
     }
 
     public List<Car> getAll() {
+        return cars;
     }
 
     public List<Car> findWinners() {
+        int max = cars.stream()
+                .mapToInt(Car::getPosition)
+                .max()
+                .orElse(0);
+
+        return cars.stream()
+                .filter(car -> car.getPosition() == max)
+                .collect(Collectors.toList());
     }
 }
