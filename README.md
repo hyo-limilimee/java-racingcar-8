@@ -40,7 +40,7 @@
 - [X] `InputViewTest` : 입력 문자열 파싱, 검증 로직 예외 확인
 - [ ] `OutputviewTest` : 출력 포맷(라운드, 우승자, 에러 메시지) 검증 테스트
 - [X] `RacingServiceTest` : 전체 게임 로직 시뮬레이션 테스트
-- [ ] `RacingValidatorTest` : 중복 이름 및 시도 횟수 검증 테스트
+- [X] `RacingValidatorTest` : 중복 이름 및 시도 횟수 검증 테스트
 - [ ] `RacingControllerTest` : 프로그램 전체 흐름 테스트
 ---
 
