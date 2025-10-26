@@ -52,9 +52,9 @@ class RacingControllerTest {
         assertThat(output).contains("최종 우승자");
     }
 
-    @DisplayName("입력 검증 실패 시 [ERROR] 메시지가 출력된다")
+    @DisplayName("입력 검증 실패 시 IllegalArgumentException이 발생한다")
     @Test
-    void invalidInputShowsError() {
+    void invalidInputThrowsException() {
         InputView invalidInputView = new InputView() {
             @Override
             public List<String> readCarNames() {
@@ -63,15 +63,16 @@ class RacingControllerTest {
 
             @Override
             public int readTryCount() {
-                return 0;
+                return 1;
             }
         };
 
+        OutputView outputView = new OutputView();
         RacingController controller = new RacingController(invalidInputView, outputView);
-        controller.run();
 
-        String output = outContent.toString();
-        assertThat(output).contains("[ERROR]");
+        assertThatThrownBy(controller::run)
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("잘못된 입력");
     }
 
     @DisplayName("시도 횟수가 1 이상일 때만 반복 실행된다")
