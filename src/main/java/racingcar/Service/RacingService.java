@@ -27,5 +27,9 @@ public class RacingService {
     }
 
     public List<String> getWinnerNames() {
+        return game.findWinners()
+                .stream()
+                .map(Car::getName)
+                .collect(Collectors.toList());
     }
 }
