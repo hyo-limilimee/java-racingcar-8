@@ -81,10 +81,10 @@
 ---
 
 ### 🧩 RacingValidator (`service.RacingValidator`)
-- [ ] 시도 횟수가 1 이상인지 검증한다.
-- [ ] 자동차 이름 목록이 비어 있지 않은지 검증한다.
-- [ ] 자동차 이름 중복 여부를 검증한다.
-- [ ] 중복된 이름이 있을 경우 `IllegalArgumentException` 발생시킨다.
+- [X] 시도 횟수가 1 이상인지 검증한다.
+- [X] 자동차 이름 목록이 비어 있지 않은지 검증한다.
+- [X] 자동차 이름 중복 여부를 검증한다.
+- [X] 중복된 이름이 있을 경우 `IllegalArgumentException` 발생시킨다.
 
 ---
 
