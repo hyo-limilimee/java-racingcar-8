@@ -1,4 +1,4 @@
-package racingcar.Service;
+package racingcar.service;
 
 
 import org.junit.jupiter.api.DisplayName;
