@@ -15,20 +15,20 @@
 
 ### 프로그래밍 요구사항
 
-- [ ] 프로그래밍 시작점은 `Application`의 `main`이다.
-- [ ] 프로그램 종료 시 `System.exit()`를 호출하지 않는다.
-- [ ] 프로그래밍 요구 사항에서 달리 명시하지 않는 한 파일, 패키지 등의 이름을 바꾸거나 이동하지 않는다.
-- [ ] 자바 코드 컨벤션을 지키면서 프로그래밍한다.
-- [ ] indent(인덴트, 들여쓰기) depth를 3이 넘지 않도록 구현한다.
-- [ ] 3항 연산자를 쓰지 않는다.
-- [ ] 함수(또는 메서드)가 한 가지 일만 하도록 최대한 작게 만들어라.
-- [ ] JUnit 5와 AssertJ를 이용하여 정리한 기능 목록이 정상적으로 작동하는지 테스트 코드로 확인한다.
+- [X] 프로그래밍 시작점은 `Application`의 `main`이다.
+- [X] 프로그램 종료 시 `System.exit()`를 호출하지 않는다.
+- [X] 프로그래밍 요구 사항에서 달리 명시하지 않는 한 파일, 패키지 등의 이름을 바꾸거나 이동하지 않는다.
+- [X] 자바 코드 컨벤션을 지키면서 프로그래밍한다.
+- [X] indent(인덴트, 들여쓰기) depth를 3이 넘지 않도록 구현한다.
+- [X] 3항 연산자를 쓰지 않는다.
+- [X] 함수(또는 메서드)가 한 가지 일만 하도록 최대한 작게 만들어라.
+- [X] JUnit 5와 AssertJ를 이용하여 정리한 기능 목록이 정상적으로 작동하는지 테스트 코드로 확인한다.
 
 ### 라이브러리
 
-- [ ] camp.nextstep.edu.missionutils에서 제공하는 Randoms 및 Console API를 사용하여 구현해야 한다.
-- [ ] Random 값 추출은 camp.nextstep.edu.missionutils.Randoms의 pickNumberInRange()를 활용한다.
-- [ ] 사용자가 입력하는 값은 camp.nextstep.edu.missionutils.Console의 readLine()을 활용한다.
+- [X] camp.nextstep.edu.missionutils에서 제공하는 Randoms 및 Console API를 사용하여 구현해야 한다.
+- [X] Random 값 추출은 camp.nextstep.edu.missionutils.Randoms의 pickNumberInRange()를 활용한다.
+- [X] 사용자가 입력하는 값은 camp.nextstep.edu.missionutils.Console의 readLine()을 활용한다.
 
 ---
 ## 구현할 기능 목록 📋
@@ -122,8 +122,8 @@
 ---
 
 ### 🏁 Application (`Application.java`)
-- [ ] 프로그램 실행의 진입점 (`main` 메서드)
-- [ ] `InputView`, `OutputView`, `RacingController`를 생성하여 실행한다.
+- [X] 프로그램 실행의 진입점 (`main` 메서드)
+- [X] `InputView`, `OutputView`, `RacingController`를 생성하여 실행한다.
 
 ---
 ## 디렉터리 구조 🗂️

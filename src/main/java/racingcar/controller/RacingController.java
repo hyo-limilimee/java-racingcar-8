@@ -1,6 +1,7 @@
 package racingcar.controller;
 
 import java.util.List;
+
 import racingcar.service.RacingService;
 import racingcar.service.RacingValidator;
 import racingcar.view.InputView;
@@ -17,22 +18,18 @@ public class RacingController {
     }
 
     public void run() {
-        try {
-            List<String> names = inputView.readCarNames();
-            int tryCount = inputView.readTryCount();
-            RacingValidator.validateTryCount(tryCount);
+        List<String> names = inputView.readCarNames();
+        int tryCount = inputView.readTryCount();
+        RacingValidator.validateTryCount(tryCount);
 
-            RacingService service = new RacingService(names);
-            outputView.printResultTitle();
+        RacingService service = new RacingService(names);
+        outputView.printResultTitle();
 
-            for (int i = 0; i < tryCount; i++) {
-                service.playOnce();
-                outputView.printRound(service.renderCars());
-            }
-
-            outputView.printWinners(service.getWinnerNames());
-        } catch (IllegalArgumentException e) {
-            outputView.printError(e.getMessage());
+        for (int i = 0; i < tryCount; i++) {
+            service.playOnce();
+            outputView.printRound(service.renderCars());
         }
+
+        outputView.printWinners(service.getWinnerNames());
     }
 }
