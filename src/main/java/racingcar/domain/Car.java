@@ -7,6 +7,9 @@ public class Car {
     private final String name;
     private int position = 0;
 
+    private static final String ERROR_CAR_NAME_EMPTY = "자동차 이름은 비어 있을 수 없습니다.";
+    private static final String ERROR_CAR_NAME_LENGTH = "자동차 이름은 5자 이하여야 합니다.";
+
     public Car(String name) {
         validateName(name);
         this.name = name.trim();
@@ -14,10 +17,10 @@ public class Car {
 
     private void validateName(String name) {
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("자동차 이름은 비어 있을 수 없습니다.");
+            throw new IllegalArgumentException(ERROR_CAR_NAME_EMPTY);
         }
         if (name.length() > MAX_NAME_LENGTH) {
-            throw new IllegalArgumentException("자동차 이름은 5자 이하여야 합니다.");
+            throw new IllegalArgumentException(ERROR_CAR_NAME_LENGTH);
         }
     }
 

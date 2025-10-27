@@ -3,10 +3,11 @@ package racingcar.view;
 import java.util.List;
 
 public class OutputView {
+    private static final String OUT_PRINT = "실행 결과";
 
     public void printResultTitle() {
+        System.out.println(OUT_PRINT);
         System.out.println();
-        System.out.println("실행 결과");
     }
 
     public void printRound(List<String> results) {
